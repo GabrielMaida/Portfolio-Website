@@ -1,0 +1,52 @@
+/* Layers Priority */
+@layer reset, colors, base, header, main, footer;
+
+/* Reset Layer */
+@layer reset {
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		/* font-family: "Schibsted Grotesk", sans-serif; */
+	}
+
+	html,
+	body {
+		width: 100%;
+		/* font-size: 18px; */
+		/* overflow-x: hidden; */
+	}
+}
+
+/* Colors Layer */
+@layer colors {
+	:root {
+		--primary-color: red;
+		/* --light-bg: #ffffff; */
+		/* --dark-bg: #101828; */
+		/* --dark-text: #101828; */
+		/* --light-text: #ffffff; */
+		/* --primary-color: #1a2845; */
+		/* --secondary-color: #ffffff; */
+	}
+}
+
+/* Base Styles Layer */
+@layer base {
+	body {
+		min-height: 100vh;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
+	}
+}
+
+@layer header {
+}
+
+@layer main {
+}
+
+@layer footer {
+}
